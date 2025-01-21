@@ -5,7 +5,10 @@ export default {
     extend: {
       colors: {
         TextPrimary: "#5E6871",
-        TextHover: "#6A0DAD",
+        primary: "#6A0DAD",
+      },
+      animation: {
+        "spin-slow": "spin 3s linear infinite",
       },
     },
   },

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logo from "./assets/WhatsApp_Image_2025-01-17_at_9.15.23_PM-removebg-preview.png";
+import logo from "../assets/WhatsApp_Image_2025-01-17_at_9.15.23_PM-removebg-preview.png";
 import { Link, useNavigate } from "react-router-dom";
 
 const NavBar = () => {
@@ -43,7 +43,7 @@ const NavBar = () => {
         <li>
           <Link
             to="/"
-            className={`block px-2 py-1 hover:text-TextHover ${
+            className={`block px-2 py-1 hover:text-primary ${
               isOpen ? "mt-10" : ""
             }`}
           >
@@ -52,7 +52,7 @@ const NavBar = () => {
         </li>
         <li>
           <Link
-            className={`block px-2 py-1 hover:text-TextHover ${
+            className={`block px-2 py-1 hover:text-primary ${
               isOpen ? "mt-10" : ""
             }`}
           >
@@ -61,7 +61,7 @@ const NavBar = () => {
         </li>
         <li>
           <Link
-            className={`block px-2 py-1 hover:text-TextHover ${
+            className={`block px-2 py-1 hover:text-primary ${
               isOpen ? "mt-10" : ""
             }`}
           >
@@ -70,7 +70,7 @@ const NavBar = () => {
         </li>
         <li>
           <Link
-            className={`block px-2 py-1 hover:text-TextHover ${
+            className={`block px-2 py-1 hover:text-primary ${
               isOpen ? "mt-10" : ""
             }`}
           >
@@ -80,7 +80,7 @@ const NavBar = () => {
         <li>
           <a
             href="#contact"
-            className={`block px-2 py-1 hover:text-TextHover ${
+            className={`block px-2 py-1 hover:text-primary ${
               isOpen ? "mt-10" : ""
             }`}
           >
@@ -92,7 +92,7 @@ const NavBar = () => {
             Explore
             <span className="absolute w-36 h-32 -top-8 -left-2 bg-white rotate-12 transform scale-x-0 group-hover:scale-x-100 transition-transform group-hover:duration-500 duration-1000 origin-left"></span>
             <span className="absolute w-36 h-32 -top-8 -left-2 bg-purple-400 rotate-12 transform scale-x-0 group-hover:scale-x-100 transition-transform group-hover:duration-700 duration-700 origin-left"></span>
-            <span className="absolute w-36 h-32 -top-8 -left-2 bg-TextHover rotate-12 transform scale-x-0 group-hover:scale-x-100 transition-transform group-hover:duration-1000 duration-500 origin-left"></span>
+            <span className="absolute w-36 h-32 -top-8 -left-2 bg-primary rotate-12 transform scale-x-0 group-hover:scale-x-100 transition-transform group-hover:duration-1000 duration-500 origin-left"></span>
             <span className="group-hover:opacity-100 group-hover:duration-1000 duration-100 opacity-0 absolute top-2.5 left-6 z-10">
               Explore!
             </span>
