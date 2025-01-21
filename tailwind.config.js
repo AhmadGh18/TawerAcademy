@@ -4,7 +4,8 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "",
+        TextPrimary: "#5E6871",
+        TextHover: "#6A0DAD",
       },
     },
   },
