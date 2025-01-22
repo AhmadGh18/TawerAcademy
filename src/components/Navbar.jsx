@@ -41,7 +41,6 @@ const NavBar = () => {
             : "opacity-0 translate-y-[-10px] md:opacity-100 md:translate-y-0 md:static  text-black transition-none z-1000"
         }`}
       >
-        s
         <li>
           <Link
             to="/"
