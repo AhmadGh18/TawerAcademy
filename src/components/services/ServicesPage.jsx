@@ -58,6 +58,7 @@ const ServicesPage = () => {
               icon={service.icon}
               title={service.title}
               description={service.description}
+              detailedDescription={service.detailedDescription}
             />
           </motion.div>
         ))}
