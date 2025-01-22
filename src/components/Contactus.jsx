@@ -229,27 +229,30 @@ const Contactus = () => {
             <input
               type="text"
               placeholder="Name"
-              className="w-full rounded-lg py-3 px-4 text-gray-800 text-sm outline-none border border-gray-300 focus:border-pink-500 focus:ring-primary"
+              className="w-full rounded-lg py-3 px-4 text-gray-800 text-sm outline-none border border-gray-300 focus:border-primary focus:ring-primary"
             />
             <input
               type="email"
+              onChange={(e) => setEmail(e.target.value)}
               placeholder="Your Email"
               className="w-full rounded-lg py-3 px-4 text-gray-800 text-sm outline-none border border-gray-300 focus:border-primary focus:ring-primary"
             />
             <input
               type="text"
+              onChange={(e) => setSubject(e.target.value)}
               placeholder="Subject"
               className="w-full rounded-lg py-3 px-4 text-gray-800 text-sm outline-none border border-gray-300 focus:border-primary focus:ring-primary"
             />
             <textarea
               placeholder="Message"
+              onChange={(e) => setMessage(e.target.value)}
               rows="6"
               className="w-full rounded-lg px-4 text-gray-800 text-sm pt-3 outline-none border border-gray-300 focus:border-primary focus:ring-primary"
             ></textarea>
             <button
-              type="button"
+              type="submit"
               onClick={sendEmail}
-              className="text-white bg-pink-600 hover:bg-pink-700 tracking-wide rounded-lg text-sm px-4 py-3 flex items-center justify-center w-full !mt-6 transition-all hover:scale-105"
+              className="text-white bg-primary hover:bg-pink-700 tracking-wide rounded-lg text-sm px-4 py-3 flex items-center justify-center w-full !mt-6 transition-all hover:scale-105"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
