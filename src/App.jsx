@@ -3,13 +3,16 @@ import NavBar from "./components/Navbar";
 import Banner from "./components/Banner";
 import Contactus from "./components/ContactUs";
 import ClientsReview from "./components/ClientsReview";
+import HomePage from "./components/Home";
 
 const App = () => {
   return (
     <div className="">
       <NavBar />
-      <Contactus />
+      <HomePage></HomePage>
       <ClientsReview />
+      <Contactus />
+      
     </div>
   );
 };
