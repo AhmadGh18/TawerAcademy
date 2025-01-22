@@ -8,8 +8,8 @@ const NavBar = () => {
   const nav = useNavigate();
   return (
     <div
-      className={`z-100 navbar md:mt-4  flex flex-col shadow-md  md:flex-row justify-around items-center h-24 px-8 font-title font-extralight 
-     transition-colors`}
+      className={` navbar md:mt-4  flex flex-col shadow-md z-100  md:flex-row justify-around items-center h-24 px-8 font-title font-extralight 
+     t  -colors z-10000`}
     >
       <div className="flex justify-between items-center w-full md:w-auto">
         <img className="h-[120px]" src={logo} alt="Tawer" draggable={false} />
@@ -34,10 +34,11 @@ const NavBar = () => {
         </button>
       </div>
       <ul
-        className={`md:flex h-[90%] bg-white md:items-center md:gap-8 text-lg font-semibold transition-all duration-300 ${
+        style={{ zIndex: "222" }}
+        className={`md:flex h-[90%] bg-white md:items-center md:gap-8 text-lg font-semibold z-100 transition-all duration-300 ${
           isOpen
-            ? "flex flex-col items-center w-full absolute top-20 left-0 md:static md:bg-white shadow-lg text-black"
-            : "opacity-0 translate-y-[-10px] md:opacity-100 md:translate-y-0 md:static  text-black transition-none"
+            ? "flex flex-col items-center w-full absolute top-20 left-0 md:static md:bg-white shadow-lg text-black z-100"
+            : "opacity-0 translate-y-[-10px] md:opacity-100 md:translate-y-0 md:static  text-black transition-none z-1000"
         }`}
       >
         <li>
