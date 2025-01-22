@@ -1,8 +1,8 @@
 import React from "react";
 import NavBar from "./components/Navbar";
-import Contactus from "./components/ContactUs";
 import ClientsReview from "./components/ClientsReview";
 import HomePage from "./components/Home";
+import Contactus from "./components/Contactus";
 
 const App = () => {
   return (
@@ -11,7 +11,6 @@ const App = () => {
       <HomePage></HomePage>
       <ClientsReview />
       <Contactus />
-      
     </div>
   );
 };
