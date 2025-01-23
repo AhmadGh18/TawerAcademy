@@ -3,3 +3,7 @@
     bottom: -3px !important;
     z-index: 99 !important;
   }
+
+  .swiper-pagination-bullet {
+    background-color: #6A0DAD;
+  }
