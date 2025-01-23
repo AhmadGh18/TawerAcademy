@@ -1,5 +1,5 @@
-.mySwiper .swiper-pagination-bullet {
-  background-color: red !important;
-  color: rebeccapurple !important;
-
-}
+  .swiper-pagination {
+    position: absolute !important;
+    bottom: -3px !important;
+    z-index: 99 !important;
+  }

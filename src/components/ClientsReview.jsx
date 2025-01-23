@@ -122,9 +122,10 @@ import "swiper/css"; // Import Swiper's styles
 import "swiper/css/pagination";
 import { Autoplay, Pagination } from "swiper/modules";
 
+import "swiper/css/navigation";
 const ClientsReview = () => {
   return (
-    <div className="z-0 ">
+    <div className="z-0  ">
       <section className="py-10 !z-0" style={{ zIndex: "0" }}>
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 z-0">
           <div className="mb-16">
@@ -137,7 +138,7 @@ const ClientsReview = () => {
           </div>
 
           <Swiper
-            className="mySwiper"
+            className="mySwiper relative  h-[45vh]"
             modules={[Autoplay, Pagination]}
             slidesPerView={1}
             spaceBetween={32}
@@ -150,7 +151,10 @@ const ClientsReview = () => {
             centeredSlides={true}
             pagination={{
               clickable: true,
+
               bulletClass: "swiper-pagination-bullet",
+              // el: ".swiper-pagination",
+
               bulletActiveClass: "swiper-pagination-bullet-active",
             }}
             breakpoints={{
@@ -202,8 +206,6 @@ const ClientsReview = () => {
               </SwiperSlide>
             ))}
           </Swiper>
-
-          <div className="swiper-pagination"></div>
         </div>
       </section>
     </div>
