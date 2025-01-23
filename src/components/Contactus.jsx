@@ -132,6 +132,7 @@ const Contactus = () => {
             <input
               type="text"
               placeholder="Name"
+              onChange={(e) => setName(e.target.value)}
               className="w-full rounded-lg py-3 px-4 text-gray-800 text-sm outline-none border border-gray-300 focus:border-primary focus:ring-primary"
             />
             <input
