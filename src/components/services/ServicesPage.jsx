@@ -1,7 +1,8 @@
 import React from "react";
 import ServicesCard from "./ServicesCard";
 import services from "../../data/services";
-import { motion } from "framer-motion";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 const ServicesPage = () => {
   // Animation variants for the grid container
@@ -53,14 +54,13 @@ const ServicesPage = () => {
         animate="visible"
       >
         {services.map((service) => (
-          <motion.div key={service.id} variants={cardVariants}>
-            <ServicesCard
-              icon={service.icon}
-              title={service.title}
-              description={service.description}
-              detailedDescription={service.detailedDescription}
-            />
-          </motion.div>
+          <ServicesCard
+            key={service.id}
+            icon={service.icon}
+            title={service.title}
+            description={service.description}
+            detailedDescription={service.detailedDescription}
+          />
         ))}
       </motion.div>
     </motion.div>

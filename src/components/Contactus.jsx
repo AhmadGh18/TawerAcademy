@@ -59,7 +59,7 @@ const Contactus = () => {
   };
 
   return (
-    <div className="mt-2 max-w-6xl max-lg:max-w-3xl mx-auto bg-gradient-to-br from-primary to-pink-500 md:rounded-lg shadow-lg animate-fadeIn">
+    <div className="mt-2 max-w-6xl max-lg:max-w-3xl mx-auto bg-gradient-to-r from-purple-600 via-violet-500 to-purple-700 md:rounded-lg shadow-lg animate-fadeIn">
       <div className="grid lg:grid-cols-2 items-center gap-14 sm:p-8 p-4 ">
         <div>
           <h1 className="text-4xl font-bold text-white">Get in Touch</h1>
@@ -156,7 +156,7 @@ const Contactus = () => {
             <button
               onClick={sendEmail}
               type="submit"
-              className="px-8 z-30 py-4 bg-primary rounded-md text-white relative font-semibold after:-z-20 after:absolute after:h-1 after:w-1 after:bg-orangeprimary after:left-5 overflow-hidden after:bottom-0 after:translate-y-full after:rounded-md after:hover:scale-[300] after:hover:transition-all after:hover:duration-700 after:transition-all after:duration-700 transition-all duration-700 gap-2  text-xl w-full h-12 flex items-center justify-center"
+              className="px-8 z-30 py-2 bg-primary  rounded-md text-white relative font-semibold after:-z-20 after:absolute after:h-1 after:w-1 after:bg-orangeprimary after:left-5 overflow-hidden after:bottom-0 after:translate-y-full after:rounded-md after:hover:scale-[300] after:hover:transition-all after:hover:duration-700 after:transition-all after:duration-700 transition-all duration-700 gap-2  text-lg w-full h-10 flex items-center justify-center"
             >
               <span> Send Message</span> <FaPaperPlane />
             </button>

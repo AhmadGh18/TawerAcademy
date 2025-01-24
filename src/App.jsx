@@ -5,14 +5,18 @@ import HomePage from "./components/Home";
 import Contactus from "./components/Contactus";
 import ServicesPage from "./components/services/ServicesPage";
 import Banner from "./components/Banner";
+import TestHome from "./components/TestHome";
+import AboutUs from "./components/services/Aboutus";
 
 const App = () => {
   return (
     <div className="">
       <NavBar />
       <Banner />
-      <ClientsReview />
       <ServicesPage />
+      <ClientsReview />
+
+      <AboutUs />
 
       <Contactus />
     </div>

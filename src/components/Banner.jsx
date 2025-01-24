@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import img from "../assets/1200px-What_type_of_person_are_you_quiz_pic-removebg-preview.png";
+import img from "../assets/uu.png";
 
 const Banner = () => {
   return (
