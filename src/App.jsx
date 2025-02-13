@@ -7,17 +7,21 @@ import ServicesPage from "./components/services/ServicesPage";
 import Banner from "./components/Banner";
 import TestHome from "./components/TestHome";
 import AboutUs from "./components/services/Aboutus";
+import WhyUs from "./components/WhyUs";
+import Mentors from "./components/Mentors";
 
 const App = () => {
   return (
     <div className="">
       <NavBar />
+
       <Banner />
+      <WhyUs />
       <ServicesPage />
       <ClientsReview />
 
       <AboutUs />
-
+      <Mentors />
       <Contactus />
     </div>
   );
