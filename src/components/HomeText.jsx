@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import model from "../assets/removebg-image (1).png";
+import model from "../assets/manar.png";
 import { FaArrowRight } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 

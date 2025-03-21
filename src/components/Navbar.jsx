@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logo from "../assets/WhatsApp_Image_2025-01-17_at_9.15.23_PM-removebg-preview.png";
+import logo from "../assets/logo.png";
 import { Link, useNavigate } from "react-router-dom";
 
 const NavBar = () => {

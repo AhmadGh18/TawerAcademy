@@ -7,3 +7,23 @@
   .swiper-pagination-bullet {
     background-color: #6A0DAD;
   }
+
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+
+    50% {
+      background-position: 100% 50%;
+    }
+
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  .bg-animated {
+    background: linear-gradient(120deg, #ff9a9e, #fad0c4);
+    background-size: 200% 200%;
+    animation: gradientAnimation 6s ease infinite;
+  }

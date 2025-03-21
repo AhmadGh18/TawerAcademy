@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
-import model from "../assets/removebg-image (1).png";
+import model from "../assets/manar.png";
 import abed from "../assets/abed.png";
 import osma from "../assets/osama.png";
 

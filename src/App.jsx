@@ -9,11 +9,13 @@ import TestHome from "./components/TestHome";
 import AboutUs from "./components/services/Aboutus";
 import WhyUs from "./components/WhyUs";
 import Mentors from "./components/Mentors";
+import Home2 from "./components/Home2";
 
 const App = () => {
   return (
-    <div className="">
-      <NavBar />
+    <div className="font-body">
+      <Home2 />
+      {/* <NavBar />
 
       <Banner />
       <WhyUs />
@@ -22,7 +24,7 @@ const App = () => {
 
       <AboutUs />
       <Mentors />
-      <Contactus />
+      <Contactus /> */}
     </div>
   );
 };
