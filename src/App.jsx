@@ -14,14 +14,11 @@ import Home2 from "./components/Home2";
 const App = () => {
   return (
     <div className="font-body">
-      <Home2 />
-      {/* <NavBar />
-
+      <NavBar />
       <Banner />
       <WhyUs />
       <ServicesPage />
       <ClientsReview />
-
       <AboutUs />
       <Mentors />
       <Contactus /> */}

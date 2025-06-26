@@ -19,31 +19,13 @@ const HomeText = () => {
   return (
     <div>
       <div className="h-[90vh] flex flex-col md:flex-row items-center justify-evenly">
-        <div className="flex flex-col text-center md:text-left px-4 md:px-0 items-center md:items-start mt-[-100px]">
-          <h6 className="text-orangeprimary uppercase text-base md:text-lg tracking-wide leading-tight mb-3">
-            Tawwer Academy
-          </h6>
-          <div className="text-3xl gap-3 flex flex-col md:text-5xl tracking-wide  font-title mb-4 leading-relaxed">
-            <span className="md:text-7xl text-5xl font-bold text-primary ">
-              Learn Anything,
-            </span>
-
-            <span className="font-bold text-orangeprimary">
-              {" "}
-              Anywhere Now !
-            </span>
-          </div>
-          <p className="text-sm md:text-base tracking-wide leading-relaxed mb-4">
-            A great place to buy clothes for all genders <br />
-            and all sizes starting from 2$
+        <div className="bg-red-200 flex flex-col max-w-[40%] leading-relaxed gap-3">
+          <h1>Welcome to Tawr Academy</h1>
+          <p>
+            Live English courses designed for Arabic speakers — tailored to your
+            time, level, and goals. Interactive approach, flexible structure,
+            and top-quality learning.
           </p>
-          <button
-            onClick={change}
-            className="bg-orangeprimary p-3  text-white w-[120px] md:w-[140px] h-12 mt-2 rounded-md flex items-center justify-center space-x-2 hover:bg-primary transition duration-300"
-          >
-            <span className="text-xl ">Lets go</span>
-            <FaArrowRight className="text-white text-lg" />
-          </button>
         </div>
         <div className="hidden md:block b h-[85vh] mt-[-100px] ">
           <img
