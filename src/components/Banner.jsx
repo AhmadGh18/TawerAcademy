@@ -13,7 +13,7 @@ const LandingPage = () => {
   return (
     <div
       dir={isArb ? "rtl" : "ltr"}
-      className={`md:h-[80vh] max-h-[90vh] h-screen bg-red-200  px-6 py-3 ${
+      className={`md:h-[80vh] max-h-[90vh] h-[80vh]   px-6 py-3 ${
         isArb ? "font-arb" : "font-body"
       }  flex items-center `}
     >
