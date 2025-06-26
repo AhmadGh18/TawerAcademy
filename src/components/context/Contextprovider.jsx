@@ -2,26 +2,32 @@ import React, { createContext, useContext, useEffect, useState } from "react";
 
 const StateContext = createContext({
   isArb: false,
-
   setIsArb: () => {},
 });
 
 export const ContextProvider = ({ children }) => {
   const [isArb, setIsArb] = useState(false);
+
   useEffect(() => {
-    const updateLang = () => {
-      const lang = navigator.language || navigator.userLanguage;
-      setIsArb(lang.startsWith("ar"));
-    };
-
-    updateLang(); // initial check
-    window.addEventListener("languagechange", updateLang);
-
-    return () => window.removeEventListener("languagechange", updateLang);
+    const storedLang = localStorage.getItem("lang");
+    if (storedLang) {
+      setIsArb(storedLang === "ar");
+    } else {
+      const browserLang = navigator.language || navigator.userLanguage;
+      const isBrowserArabic = browserLang.startsWith("ar");
+      setIsArb(isBrowserArabic);
+      localStorage.setItem("lang", isBrowserArabic ? "ar" : "en");
+    }
   }, []);
 
+  // Sync localStorage when user switches
+  const handleSetIsArb = (val) => {
+    setIsArb(val);
+    localStorage.setItem("lang", val ? "ar" : "en");
+  };
+
   return (
-    <StateContext.Provider value={{ isArb, setIsArb }}>
+    <StateContext.Provider value={{ isArb, setIsArb: handleSetIsArb }}>
       {children}
     </StateContext.Provider>
   );

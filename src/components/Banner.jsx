@@ -24,14 +24,14 @@ const LandingPage = () => {
             isArb ? "md:text-right" : "md:text-left"
           }`}
         >
-          <h1 className="text-3xl md:text-5xl font-bold text-[#6A0DAD] leading-tight">
+          <h1 className="text-3xl md:text-5xl font-bold text-primary leading-tight">
             {data.homePage.title}
           </h1>
           <p className="text-[#5E6871] text-md font-body">{data.homePage.s}</p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-[#5E6871]">
             <div>
-              <h3 className="font-semibold md:text-md text-sm text-[#6A0DAD]">
+              <h3 className="font-semibold md:text-md text-sm text-primary">
                 {data.homePage.features.instructor.title}
               </h3>
               <p className="md:text-md text-sm">
@@ -39,7 +39,7 @@ const LandingPage = () => {
               </p>
             </div>
             <div>
-              <h3 className="font-semibold md:text-md text-sm text-[#6A0DAD]">
+              <h3 className="font-semibold md:text-md text-sm text-primary">
                 {data.homePage.features.schedule.title}
               </h3>
               <p className="md:text-md text-sm">
@@ -47,7 +47,7 @@ const LandingPage = () => {
               </p>
             </div>
             <div>
-              <h3 className="font-semibold md:text-md text-sm text-[#6A0DAD]">
+              <h3 className="font-semibold md:text-md text-sm text-primary">
                 {data.homePage.features.level.title}
               </h3>
               <p className="md:text-md text-sm">
@@ -55,7 +55,7 @@ const LandingPage = () => {
               </p>
             </div>
             <div>
-              <h3 className="font-semibold md:text-md text-sm text-[#6A0DAD]">
+              <h3 className="font-semibold md:text-md text-sm text-primary">
                 {data.homePage.features.support.title}
               </h3>
               <p className="md:text-md text-sm">
