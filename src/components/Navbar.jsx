@@ -1,20 +1,24 @@
 import React, { useState } from "react";
 import logo from "../assets/logo.png";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import {
   FaBars,
   FaFacebook,
-  FaInstagram,
   FaTiktok,
   FaWhatsapp,
   FaYoutube,
 } from "react-icons/fa";
-import { FaTicket } from "react-icons/fa6";
 import inst from "../assets/instagram-logo-gradient-transparent.png";
+import { useStateContext } from "./context/Contextprovider";
+import ar from "../lang/arabic.json";
+import en from "../lang/arabic.json";
+import Switch from "./Switch";
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () => setIsOpen(!isOpen);
-  const nav = useNavigate();
+  const { isArb } = useStateContext();
+
+  const data = isArb ? ar : en;
   return (
     <div
       className={` navbar md:mt-4    flex flex-col shadow-md z-100  md:flex-row md:justify-between md:px-[108px] px-8 items-center h-24  font-title font-extralight 
@@ -22,12 +26,15 @@ const NavBar = () => {
     >
       <div className="flex justify-between items-center w-full md:w-auto">
         <img className="h-[120px]" src={logo} alt="Tawer" draggable={false} />
-        <button
-          className="md:hidden text-gray-600 focus:outline-none"
-          onClick={toggleMenu}
-        >
-          <FaBars />
-        </button>
+        <div className=" md:hidden flex items-center gap-3  ">
+          <Switch />
+          <button
+            className="md:hidden text-gray-600 focus:outline-none"
+            onClick={toggleMenu}
+          >
+            <FaBars />
+          </button>
+        </div>
       </div>
       <ul
         style={{ zIndex: "222" }}
@@ -87,9 +94,12 @@ const NavBar = () => {
             <span className="absolute w-36 h-32 -top-8 -left-2 bg-green-400 rotate-12 transform scale-x-0 group-hover:scale-x-100 transition-transform group-hover:duration-700 duration-700 origin-left"></span>
             <span className="absolute w-36 h-32 -top-8 -left-2 bg-green-600 rotate-12 transform scale-x-0 group-hover:scale-x-100 transition-transform group-hover:duration-1000 duration-500 origin-left"></span>
             <span className="group-hover:opacity-100 group-hover:duration-1000 duration-100 opacity-0 absolute t  z-10">
-              contact us
+              {data.homePage.ContactButton}
             </span>
           </button>
+        </li>
+        <li className="hidden md:block">
+          <Switch />
         </li>
       </ul>
     </div>

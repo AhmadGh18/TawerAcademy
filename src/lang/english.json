@@ -1,5 +1,27 @@
 {
     "homePage": {
-        "title": "hello welcome to website"
+        "title": "🌟 Welcome to Tawr Academy",
+        "subtitle": "Live English courses designed for Arabic speakers — tailored to your time, level, and goals.Interactive approach, flexible structure, and top-quality learning.",
+        "point1": "🚀 Start your journey today!",
+        "point2": "📱 Contact us on WhatsApp to assess your level and pick the right course.",
+        "features": {
+            "instructor": {
+                "title": "👨‍🏫 Expert Instructors",
+                "desc": "Live sessions with experienced and certified teachers."
+            },
+            "schedule": {
+                "title": "📅 Flexible Schedules",
+                "desc": "Choose timings that suit your lifestyle and commitments."
+            },
+            "level": {
+                "title": "📈 Level-Based Learning",
+                "desc": "Placement tests to start at the right level."
+            },
+            "support": {
+                "title": "💬 Arabic Support",
+                "desc": "Clear explanations in Arabic to make your journey smooth."
+            }
+        },
+        "ContactButton": "Contact us"
     }
 }

@@ -12,6 +12,8 @@ import Mentors from "./components/Mentors";
 import Home2 from "./components/Home2";
 
 const App = () => {
+  const lang = navigator.language;
+  console.log(lang);
   return (
     <div className="font-body   ">
       <NavBar />

@@ -2,55 +2,64 @@ import React from "react";
 import { motion } from "framer-motion";
 import { FaWhatsapp } from "react-icons/fa";
 import manar from "../assets/manar.png";
+import { useStateContext } from "../components/context/Contextprovider"; // adjust path if needed
+import ar from "../lang/arabic.json";
+import en from "../lang/english.json";
+
 const LandingPage = () => {
+  const { isArb } = useStateContext();
+  const data = isArb ? ar : en;
+
   return (
     <div
-      dir=""
-      className="md:h-[80vh] max-h-[90vh]  px-6 py-3 !font-body  flex items-center "
+      dir={isArb ? "rtl" : "ltr"}
+      className={`md:h-[80vh] max-h-[90vh]  px-6 py-3 ${
+        isArb ? "font-arb" : "font-body"
+      }  flex items-center `}
     >
-      <div className="max-w-7xl mx-auto grid font-body md:grid-cols-2 gap-32 items-center">
+      <div className="max-w-7xl mx-auto grid  md:grid-cols-2 gap-32 items-center">
         {/* Text Section */}
-        <div className="md:space-y-6 space-y-2 text-center md:text-left">
+        <div
+          className={`md:space-y-6 space-y-2 text-center ${
+            isArb ? "md:text-right" : "md:text-left"
+          }`}
+        >
           <h1 className="text-3xl md:text-5xl font-bold text-[#6A0DAD] leading-tight">
-            Welcome to Tawr Academy
+            {data.homePage.title}
           </h1>
-          <p className="text-[#5E6871] text-md font-body">
-            Learn English with confidence through our live, interactive courses
-            built specifically for Arabic speakers. Whether you're a beginner or
-            advanced, we tailor the journey to your goals.
-          </p>
+          <p className="text-[#5E6871] text-md font-body">{data.homePage.s}</p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-[#5E6871]">
             <div>
               <h3 className="font-semibold md:text-md text-sm text-[#6A0DAD]">
-                👨‍🏫 Expert Instructors
+                {data.homePage.features.instructor.title}
               </h3>
               <p className="md:text-md text-sm">
-                Live sessions with experienced and certified teachers.
+                {data.homePage.features.instructor.desc}
               </p>
             </div>
             <div>
               <h3 className="font-semibold md:text-md text-sm text-[#6A0DAD]">
-                📅 Flexible Schedules
+                {data.homePage.features.schedule.title}
               </h3>
               <p className="md:text-md text-sm">
-                Choose timings that suit your lifestyle and commitments.
+                {data.homePage.features.schedule.desc}
               </p>
             </div>
             <div>
               <h3 className="font-semibold md:text-md text-sm text-[#6A0DAD]">
-                📈 Level-Based Learning
+                {data.homePage.features.level.title}
               </h3>
               <p className="md:text-md text-sm">
-                Placement tests to start at the right level.
+                {data.homePage.features.level.desc}
               </p>
             </div>
             <div>
               <h3 className="font-semibold md:text-md text-sm text-[#6A0DAD]">
-                💬 Arabic Support
+                {data.homePage.features.support.title}
               </h3>
               <p className="md:text-md text-sm">
-                Clear explanations in Arabic to make your journey smooth.
+                {data.homePage.features.support.desc}
               </p>
             </div>
           </div>
@@ -60,7 +69,7 @@ const LandingPage = () => {
             whileTap={{ scale: 0.95 }}
             className="bg-green-600 text-white text-lg px-6 py-3 rounded-xl flex items-center gap-2 mx-auto md:mx-0"
           >
-            <FaWhatsapp /> Contact us
+            <FaWhatsapp /> {data.homePage.ContactButton}
           </motion.button>
         </div>
 

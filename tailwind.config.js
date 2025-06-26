@@ -4,6 +4,7 @@ export default {
   theme: {
     fontFamily: {
       body: ["Ubuntu", " sans-serif"],
+      arb: ["Noto Sans Arabic", "sans-serif"],
     },
 
     extend: {
