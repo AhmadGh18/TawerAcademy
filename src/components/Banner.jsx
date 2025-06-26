@@ -6,11 +6,11 @@ const LandingPage = () => {
   return (
     <div
       dir=""
-      className="md:h-[80vh]  px-6 py-8 !font-body  flex items-center "
+      className="md:h-[80vh] max-h-[90vh]  px-6 py-3 !font-body  flex items-center "
     >
       <div className="max-w-7xl mx-auto grid font-body md:grid-cols-2 gap-32 items-center">
         {/* Text Section */}
-        <div className="md:space-y-6 space-y-5 text-center md:text-left">
+        <div className="md:space-y-6 space-y-2 text-center md:text-left">
           <h1 className="text-3xl md:text-5xl font-bold text-[#6A0DAD] leading-tight">
             Welcome to Tawr Academy
           </h1>
