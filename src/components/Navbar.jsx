@@ -11,7 +11,7 @@ import {
 import inst from "../assets/instagram-logo-gradient-transparent.png";
 import { useStateContext } from "./context/Contextprovider";
 import ar from "../lang/arabic.json";
-import en from "../lang/arabic.json";
+import en from "../lang/english.json";
 import Switch from "./Switch";
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
