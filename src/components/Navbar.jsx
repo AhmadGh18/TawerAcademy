@@ -45,40 +45,46 @@ const NavBar = () => {
         }`}
       >
         <li>
-          <Link
-            to="/"
+          <a
+            target="_blank"
+            href="https://youtube.com/@taweracademy?si=Ua2owEZaDnDoQsNG"
             className={`flex justify-center items-center gap-2 px-2 py-1  hover:text-primary ${
               isOpen ? "mt-10" : ""
             }`}
           >
             <FaYoutube className="text-2xl text-red-500" />
             <p className="md:hidden block ">Youtube</p>
-          </Link>
+          </a>
         </li>
 
         <li>
-          <Link
+          <a
+            target="_blank"
+            href="https://www.instagram.com/taweracademy?igsh=amd1ejBlNWw1Mmx1"
             className={`flex justify-center items-center gap-2 px-2 py-1  hover:text-primary ${
               isOpen ? "mt-10" : ""
             }`}
           >
             <img src={inst} className="h-6" />
             <p className="md:hidden block ">Instagram</p>
-          </Link>
+          </a>
         </li>
         <li>
-          <Link
+          <a
+            target="_blank"
+            href="https://www.facebook.com/share/1HLNaZ2Asy/?mibextid=wwXIfr"
             className={`flex justify-center items-center gap-2 px-2 py-1  hover:text-primary ${
               isOpen ? "mt-10" : ""
             }`}
           >
             <FaFacebook className="text-blue-500 text-2xl" />
             <p className="md:hidden block ">Facebook</p>
-          </Link>
+          </a>
         </li>
         <li>
           <a
-            href="#contact"
+            target="_blank"
+            href="https://www.tiktok.com/@tawer.academy?_t=ZS-8xWlo9Kx7JK&_r=1"
             className={`flex justify-center items-center gap-2 px-2 py-1  hover:text-primary ${
               isOpen ? "mt-10" : ""
             }`}
@@ -88,7 +94,11 @@ const NavBar = () => {
           </a>
         </li>
         <li>
-          <button className="overflow-hidden flex justify-center items-center mt-7 mb-3 md:mt-0 md:mb-0 relative w-32 p-2 h-12 bg-green-500 text-white border-none rounded-md text-xl font-bold cursor-pointer relative z-10 group">
+          <a
+            target="_blank"
+            href="https://api.whatsapp.com/send?phone=%2B96181866049"
+            className="overflow-hidden flex justify-center items-center mt-7 mb-3 md:mt-0 md:mb-0 relative w-32 p-2 h-12 bg-green-500 text-white border-none rounded-md text-xl font-bold cursor-pointer relative z-10 group"
+          >
             <FaWhatsapp />
             <span className="absolute w-36 h-32 -top-8 -left-2 bg-white rotate-12 transform scale-x-0 group-hover:scale-x-100 transition-transform group-hover:duration-500 duration-1000 origin-left"></span>
             <span className="absolute w-36 h-32 -top-8 -left-2 bg-green-400 rotate-12 transform scale-x-0 group-hover:scale-x-100 transition-transform group-hover:duration-700 duration-700 origin-left"></span>
@@ -96,7 +106,7 @@ const NavBar = () => {
             <span className="group-hover:opacity-100 group-hover:duration-1000 duration-100 opacity-0 absolute t  z-10">
               {data.homePage.ContactButton}
             </span>
-          </button>
+          </a>
         </li>
         <li className="hidden md:block">
           <Switch />

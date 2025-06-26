@@ -64,13 +64,15 @@ const LandingPage = () => {
             </div>
           </div>
 
-          <motion.button
+          <motion.a
             whileHover={{ scale: 1.05 }}
+            href="https://api.whatsapp.com/send?phone=%2B96181866049"
+            target="_blank"
             whileTap={{ scale: 0.95 }}
-            className="bg-green-600 text-white text-lg px-6 py-3 rounded-xl flex items-center gap-2 mx-auto md:mx-0"
+            className="bg-green-600 w-fit text-white text-lg px-6 py-3 rounded-xl flex items-center gap-2 mx-auto md:mx-0"
           >
             <FaWhatsapp /> {data.homePage.ContactButton}
-          </motion.button>
+          </motion.a>
         </div>
 
         {/* Image Section */}
