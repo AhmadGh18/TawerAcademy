@@ -23,7 +23,7 @@ export const ContextProvider = ({ children }) => {
   // Sync localStorage when user switches
   const handleSetIsArb = (val) => {
     setIsArb(val);
-    localStorage.setItem("lang", val ? "ar" : "en");
+    sessionStorage.setItem("lang", val ? "ar" : "en");
   };
 
   return (
