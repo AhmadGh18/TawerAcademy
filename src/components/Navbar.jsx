@@ -51,30 +51,33 @@ const NavBar = () => {
 
         <li>
           <Link
-            className={`block tex-sm hover:text-primary ${
+            className={`flex justify-center items-center gap-2 px-2 py-1  hover:text-primary ${
               isOpen ? "mt-10" : ""
             }`}
           >
             <img src={inst} className="h-6" />
+            <p className="md:hidden block ">Instagram</p>
           </Link>
         </li>
         <li>
           <Link
-            className={`block px-2 py-1 hover:text-primary ${
+            className={`flex justify-center items-center gap-2 px-2 py-1  hover:text-primary ${
               isOpen ? "mt-10" : ""
             }`}
           >
             <FaFacebook className="text-blue-500 text-2xl" />
+            <p className="md:hidden block ">Facebook</p>
           </Link>
         </li>
         <li>
           <a
             href="#contact"
-            className={`block px-2 py-1 hover:text-primary ${
+            className={`flex justify-center items-center gap-2 px-2 py-1  hover:text-primary ${
               isOpen ? "mt-10" : ""
             }`}
           >
-            <FaTiktok className="text-" />
+            <FaTiktok className="text-2xl text-left" />
+            <p className="md:hidden block ">tiktok</p>
           </a>
         </li>
         <li>
