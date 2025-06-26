@@ -9,7 +9,7 @@ const LandingPage = () => {
         {/* Text Section */}
         <div className="space-y-6 text-center md:text-left">
           <h1 className="text-4xl md:text-5xl font-bold text-[#6A0DAD] leading-tight">
-            🌟 Welcome to Tawr Academy
+            Welcome to Tawr Academy
           </h1>
           <p className="text-[#5E6871] text-lg font-body">
             Learn English with confidence through our live, interactive courses
@@ -49,30 +49,18 @@ const LandingPage = () => {
             whileTap={{ scale: 0.95 }}
             className="bg-green-600 text-white text-lg px-6 py-3 rounded-xl flex items-center gap-2 mx-auto md:mx-0"
           >
-            <FaWhatsapp /> Contact us on WhatsApp
+            <FaWhatsapp /> Contact us
           </motion.button>
         </div>
 
         {/* Image Section */}
-        <div className="flex justify-center bg-primary rounded-full h-[80vh] w-[40vw] mt-2">
+        <div className="md:flex justify-center hidden  bg-primary rounded-full h-[80vh] w-[40vw] mt-2">
           <img
             src={manar}
             alt="Instructor"
             className="w-80 h rounded-2xl object-cover "
           />
         </div>
-      </div>
-
-      {/* Extra Section */}
-      <div className="mt-16 text-center max-w-3xl mx-auto">
-        <h2 className="text-2xl font-bold text-[#6A0DAD] mb-4">
-          Your Journey Starts Here
-        </h2>
-        <p className="text-[#5E6871] text-lg">
-          We don’t offer one-size-fits-all courses. Instead, we work with you to
-          create a plan that aligns with your current level and target. Whether
-          it's for study, work, or travel — we’ve got the right path for you.
-        </p>
       </div>
     </div>
   );

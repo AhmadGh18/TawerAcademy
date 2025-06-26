@@ -12,6 +12,10 @@ export default {
         md: "2px 2px 4px rgba(0, 0, 0, 0.5)",
         lg: "3px 3px 6px rgba(0, 0, 0, 0.6)",
       },
+      backgroundImage: {
+        "instagram-gradient":
+          "linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5)",
+      },
       colors: {
         TextPrimary: "#5E6871",
         primary: "#6A0DAD",

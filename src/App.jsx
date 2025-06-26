@@ -16,12 +16,6 @@ const App = () => {
     <div className="font-body">
       <NavBar />
       <Banner />
-      <WhyUs />
-      <ServicesPage />
-      <ClientsReview />
-      <AboutUs />
-      <Mentors />
-      <Contactus /> */}
     </div>
   );
 };
