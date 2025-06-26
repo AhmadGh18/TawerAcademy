@@ -11,7 +11,7 @@ const Switch = () => {
         onChange={(e) => {
           const selected = e.target.value === "ar";
           setIsArb(selected);
-          localStorage.setItem("lang", selected ? "ar" : "en");
+          sessionStorage.setItem("lang", selected ? "ar" : "en");
         }}
         className="border-none outline-none focus:ring-0 p-2"
       >

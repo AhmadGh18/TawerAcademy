@@ -9,14 +9,14 @@ export const ContextProvider = ({ children }) => {
   const [isArb, setIsArb] = useState(false);
 
   useEffect(() => {
-    const storedLang = localStorage.getItem("lang");
+    const storedLang = sessionStorage.getItem("lang");
     if (storedLang) {
       setIsArb(storedLang === "ar");
     } else {
       const browserLang = navigator.language || navigator.userLanguage;
       const isBrowserArabic = browserLang.startsWith("ar");
       setIsArb(isBrowserArabic);
-      localStorage.setItem("lang", isBrowserArabic ? "ar" : "en");
+      sessionStorage.setItem("lang", isBrowserArabic ? "ar" : "en");
     }
   }, []);
 
