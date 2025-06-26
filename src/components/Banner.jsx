@@ -13,14 +13,14 @@ const LandingPage = () => {
   return (
     <div
       dir={isArb ? "rtl" : "ltr"}
-      className={`md:h-[80vh] max-h-[90vh]  px-6 py-3 ${
+      className={`md:h-[80vh] max-h-[90vh] h-screen bg-red-200  px-6 py-3 ${
         isArb ? "font-arb" : "font-body"
       }  flex items-center `}
     >
       <div className="max-w-7xl mx-auto grid  md:grid-cols-2 gap-32 items-center">
         {/* Text Section */}
         <div
-          className={`md:space-y-6 space-y-2 text-center ${
+          className={`md:space-y-6 space-y-4 text-center ${
             isArb ? "md:text-right" : "md:text-left"
           }`}
         >
