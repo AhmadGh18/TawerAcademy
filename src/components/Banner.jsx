@@ -4,14 +4,17 @@ import { FaWhatsapp } from "react-icons/fa";
 import manar from "../assets/manar.png";
 const LandingPage = () => {
   return (
-    <div dir="" className="min-h-screen  px-6 py-8 !font-body  ">
+    <div
+      dir=""
+      className="md:h-[80vh]  px-6 py-8 !font-body  flex items-center "
+    >
       <div className="max-w-7xl mx-auto grid font-body md:grid-cols-2 gap-32 items-center">
         {/* Text Section */}
-        <div className="space-y-6 text-center md:text-left">
-          <h1 className="text-4xl md:text-5xl font-bold text-[#6A0DAD] leading-tight">
+        <div className="md:space-y-6 space-y-5 text-center md:text-left">
+          <h1 className="text-3xl md:text-5xl font-bold text-[#6A0DAD] leading-tight">
             Welcome to Tawr Academy
           </h1>
-          <p className="text-[#5E6871] text-lg font-body">
+          <p className="text-[#5E6871] text-md font-body">
             Learn English with confidence through our live, interactive courses
             built specifically for Arabic speakers. Whether you're a beginner or
             advanced, we tailor the journey to your goals.
@@ -19,28 +22,36 @@ const LandingPage = () => {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-[#5E6871]">
             <div>
-              <h3 className="font-semibold text-[#6A0DAD]">
+              <h3 className="font-semibold md:text-md text-sm text-[#6A0DAD]">
                 👨‍🏫 Expert Instructors
               </h3>
-              <p>Live sessions with experienced and certified teachers.</p>
+              <p className="md:text-md text-sm">
+                Live sessions with experienced and certified teachers.
+              </p>
             </div>
             <div>
-              <h3 className="font-semibold text-[#6A0DAD]">
+              <h3 className="font-semibold md:text-md text-sm text-[#6A0DAD]">
                 📅 Flexible Schedules
               </h3>
-              <p>Choose timings that suit your lifestyle and commitments.</p>
+              <p className="md:text-md text-sm">
+                Choose timings that suit your lifestyle and commitments.
+              </p>
             </div>
             <div>
-              <h3 className="font-semibold text-[#6A0DAD]">
+              <h3 className="font-semibold md:text-md text-sm text-[#6A0DAD]">
                 📈 Level-Based Learning
               </h3>
-              <p>Placement tests to start at the right level.</p>
+              <p className="md:text-md text-sm">
+                Placement tests to start at the right level.
+              </p>
             </div>
             <div>
-              <h3 className="font-semibold text-[#6A0DAD]">
+              <h3 className="font-semibold md:text-md text-sm text-[#6A0DAD]">
                 💬 Arabic Support
               </h3>
-              <p>Clear explanations in Arabic to make your journey smooth.</p>
+              <p className="md:text-md text-sm">
+                Clear explanations in Arabic to make your journey smooth.
+              </p>
             </div>
           </div>
 

@@ -13,7 +13,7 @@ import Home2 from "./components/Home2";
 
 const App = () => {
   return (
-    <div className="font-body">
+    <div className="font-body max-h-screen">
       <NavBar />
       <Banner />
     </div>
