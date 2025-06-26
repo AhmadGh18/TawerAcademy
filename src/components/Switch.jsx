@@ -9,10 +9,14 @@ const Switch = () => {
       <select
         value={isArb ? "ar" : "en"}
         onChange={(e) => setIsArb(e.target.value === "ar")}
-        className="border-none outline-none focus:ring-0"
+        className="border-none outline-none focus:ring-0 p-1"
       >
-        <option value="en">eng</option>
-        <option value="ar">عربي</option>
+        <option className="p-1" value="en">
+          eng
+        </option>
+        <option className="p-1" value="ar">
+          عربي
+        </option>
       </select>
     </div>
   );
